@@ -38,10 +38,8 @@ body {
 #desplegable {
     display: none;
     justify-self: flex-end;
-
     /* display: flex; */
     flex-direction: column;
-
     transition: all 0.5s;
 }
 
@@ -53,8 +51,6 @@ body {
 
 #hamburguer {
     /* padding: 10px; */
-    
-
     display: flex;
     flex-direction: column;
     width: 3rem;
@@ -86,17 +82,7 @@ body {
     transform: rotate(-45deg);
 }
 
-/* .equis1 {
-    transform: rotate(45deg);
-}
 
-.equis2 {
-    opacity: 0;
-}
-
-.equis3 {
-    transform: rotate(-45deg);
-} */
 
 
 .section {
