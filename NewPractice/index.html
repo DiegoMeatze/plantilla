@@ -28,11 +28,11 @@
             <a href="javascript:void(0);">Contact</a>
         </div>
         <div id="btnHam">
-        <button id="hamburger" onclick="displayMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
+            <button id="hamburguer" onclick="displayMenu()">
+                <div id="linea1"></div>
+                <div id="linea2"></div>
+                <div id="linea3"></div>
+            </button>
         </div>
     </div>
 
@@ -87,13 +87,22 @@
     </div>
 
 </body>
+
 <script>
     var menu = document.getElementById('desplegable');
-    function displayMenu(){
-        var visible=menu.style.display;
-        if(visible.style.display=='flex'){
-            menu.style.display='none';
-        }else menu.style.display='flex';
+    var hamburguer = document.getElementById('hamburguer');
+
+    function displayMenu() {
+        if (menu.style.display == 'flex') {
+            menu.style.display = 'none';
+            hamburguer.classList.remove('equis');
+        } else {
+            menu.style.display = 'flex';
+            hamburguer.classList.add('equis');
+        }
     }
+
+
 </script>
+
 </html>
